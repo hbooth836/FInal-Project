@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="RecycleIt.css">
+		<script src="RecycleIt.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript"
+	      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVr3gZ2EBHKdDRYT-xjStzvPRoGLytcOw">
+	    </script>
+
+	</head>
+	<body>
+		<div class="clearfix">
+			<div class="imgheader">
+				<img src="http://www.vintagetechrecyclers.com/wp-content/uploads/2014/01/bigstock-Green-tree-with-hands-shaped-t-15778910.jpg">
+			</div>
+		</div>
+		<nav>
+			<a href="R2.html"> Fun Facts </a>
+			<a href="R3.html"> About Us </a>
+			<a href="RecycleIt.html"> Home </a>
+		</nav>
+
+		<h1>Recycle It!</h1>
+		
+		<div class='main'>
+			<div class='container'>
+		      <form class='search'>
+		        <select class='city'>
+		          <option value='Victoria, TX'>Victoria</option>
+		          <option value='San Antonio, TX'>San Antonio</option>
+		         </select>
+		        <input type='submit'>
+		      </form>
+		     </div>
+			<div class='container'>
+				<script type="text/javascript">
+      function initialize(event) {
+        center = { lat: 37.7833 , lng: -122.4167}
+        var mapOptions = {
+          center: center,
+          zoom: 10
+        };
+        var map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+				<div id="map-canvas"></div>
+			</div>
+		</div>
+		 
+
+
+
+<footer>
+	<p>&copy; 2014 RecycleIt </p>
+</footer>
+	</body>
+
+
+</html>
